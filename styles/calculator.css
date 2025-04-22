@@ -1,0 +1,289 @@
+body {
+  background-color: hsl(222, 26%, 31%);
+  margin: 0;
+  padding: 0;
+  margin-top: 100px;
+}
+
+p {
+  font-family: "League Spartan", Arial;
+  font-weight: 700;
+}
+
+button {
+  font-family: "League Spartan", Arial;
+  font-weight: 700;
+  padding: 8px 0px 10px 0px;
+}
+
+.theme-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr 50px;
+  width: 370px;
+  height: 20px;
+  margin: auto;
+  font-size: 8px;
+  color: hsl(0, 0%, 100%);
+}
+
+.space {
+  grid-column: 3;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.upper-info {
+  display: flex;
+  justify-content: space-between;
+  width: 365px;
+  margin: auto;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 22px;
+  align-items: center;
+  height: 20px;
+}
+
+.column-left {
+  flex: 0 0 200px;
+  font-size: 24px;
+}
+
+.column-right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.theme-name {
+  font-size: 8px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-right: 15px;
+}
+
+.slider {
+  appearance: none;
+  width: 45px;
+  height: 20px;
+  background: hsl(224, 36%, 15%);
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  border-radius: 10px;
+  padding: 0px 5px;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: hsl(6, 63%, 50%);
+  cursor: pointer;
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  background: hsl(6, 63%, 60%);
+}
+
+.calculation-area {
+  width: 370px;
+  background-color: hsl(224, 36%, 15%);
+  height: 90px;
+  margin: auto;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  text-align: end;
+  overflow: hidden;
+}
+
+.show-calculation {
+  color: hsl(0, 0%, 100%);
+  font-size: 45px;
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  padding-right: 25px;
+}
+
+.keypad-area {
+  background-color: hsl(223, 31%, 20%);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 60px);
+  max-width: 350px;
+  margin: auto;
+  justify-items: center;
+  border-radius: 5px;
+  padding: 20px 10px 5px;
+}
+
+.number-button {
+  width: 70px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: hsl(30, 25%, 89%);
+  border: none;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: hsl(221, 14%, 31%);
+  box-shadow: 0px 3px 0px hsl(28, 16%, 65%);
+  cursor: pointer;
+}
+
+.number-button:hover {
+  background-color: hsl(30, 25%, 99%);
+}
+
+.x-button {
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+.blue-button {
+  background-color: hsl(225, 21%, 49%);
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+  box-shadow: 0px 3px 0px hsl(224, 28%, 35%);
+  padding-top: 13px;
+}
+
+.blue-button:hover {
+  background-color: hsl(225, 21%, 59%);
+}
+
+.red-button {
+  background-color: hsl(6, 63%, 50%);
+  color: hsl(0, 0%, 100%);
+  grid-column: 3;
+  box-shadow: 0px 3px 0px hsl(6, 70%, 34%);
+  padding-top: 13px;
+  font-size: 22px;
+}
+
+.red-button:hover {
+  background-color: hsl(6, 63%, 60%);
+}
+
+.large-button {
+  width: 155px;
+  grid-column: span 2;
+  height: 40px;
+}
+
+.effect2 {
+  background-color: hsl(0, 0%, 90%);
+  color: hsl(60, 10%, 19%);
+}
+
+.effect2 p {
+  color: hsl(60, 10%, 19%);
+}
+
+.effect2 .calculation-area {
+  background-color: hsl(0, 0%, 93%);
+}
+
+.effect2 .keypad-area {
+  background-color: hsl(0, 5%, 81%);
+}
+
+.effect2 .number-button {
+  background-color: hsl(45, 7%, 89%);
+  box-shadow: hsl(35, 11%, 61%);
+  color: hsl(60, 10%, 19%);
+}
+
+.effect2 .number-button:hover {
+  background-color: hsl(45, 7%, 99%);
+}
+
+.effect2 .red-button {
+  background-color: hsl(25, 98%, 40%);
+  box-shadow: 0px 3px 0px hsl(25, 99%, 27%);
+  color: hsl(0, 0%, 100%);
+}
+
+.effect2 .red-button:hover {
+  background-color: hsl(25, 98%, 50%);
+}
+
+.effect2 .blue-button {
+  background-color: hsl(185, 42%, 37%);
+  box-shadow: 0px 3px 0px hsl(185, 58%, 25%);
+  color: hsl(0, 0%, 100%);
+}
+
+.effect2 .blue-button:hover {
+  background-color: hsl(185, 42%, 47%);
+}
+
+.effect2 .slider {
+  background-color: hsl(0, 5%, 81%);
+}
+
+.effect2 .slider::-webkit-slider-thumb {
+  background-color: hsl(25, 98%, 40%);
+}
+
+.effect2 .slider::-webkit-slider-thumb:hover {
+  background-color: hsl(25, 98%, 50%);
+}
+
+.effect3 {
+  background-color: hsl(268, 75%, 9%);
+  color: hsl(52, 100%, 62%);
+}
+
+.effect3 p {
+  color: hsl(52, 100%, 62%);
+}
+
+.effect3 .calculation-area,
+.effect3 .keypad-area {
+  background-color: hsl(268, 71%, 12%);
+}
+
+.effect3 .number-button {
+  background-color: hsl(268, 47%, 21%);
+  box-shadow: 0px 3px 0px hsl(290, 70%, 36%);
+  color: hsl(52, 100%, 62%);
+}
+
+.effect3 .number-button:hover {
+  background-color: hsl(268, 47%, 41%);
+}
+
+.effect3 .red-button {
+  background-color: hsl(176, 100%, 44%);
+  box-shadow: 0px 3px 0px hsl(177, 92%, 70%);
+  color: hsl(198, 20%, 13%);
+}
+
+.effect3 .red-button:hover {
+  background-color: hsl(176, 100%, 64%);
+}
+
+.effect3 .blue-button {
+  background-color: hsl(281, 89%, 26%);
+  box-shadow: 0px 3px 0px hsl(290, 70%, 36%);
+  color: hsl(0, 0%, 100%);
+}
+
+.effect3 .blue-button:hover {
+  background-color: hsl(281, 89%, 46%);
+}
+
+.effect3 .slider {
+  background-color: hsl(268, 71%, 12%);
+}
+
+.effect3 .slider::-webkit-slider-thumb {
+  background-color: hsl(176, 100%, 44%);
+}
+
+.effect3 .slider::-webkit-slider-thumb:hover {
+  background-color: hsl(176, 100%, 82%);
+}
