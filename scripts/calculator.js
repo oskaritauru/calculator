@@ -38,7 +38,7 @@ document.querySelector(".red-button").onclick = function () {
   localStorage.setItem("calculation", calculation);
 };
 
-// Add the ability to perform calculations using the keyboard, which enhances the user experience.
+// Added the ability to perform calculations using the keyboard, which enhances the user experience.
 document.addEventListener("keydown", function (event) {
   const key = event.key;
   if (!isNaN(key) || ["+", "-", "*", "/", "."].includes(key)) {
